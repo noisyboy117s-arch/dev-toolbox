@@ -10,20 +10,26 @@ export default function Home() {
     },
     {
       name: "JSON Formatter",
-      description: "Clean and validate your JSON strings (Coming Soon).",
-      href: "#",
+      description: "Clean and validate your JSON strings.",
+      href: "/tools/json",
       icon: "📦",
     },
     {
       name: "Epoch Converter",
-      description: "Unix timestamps to human date (Coming Soon).",
-      href: "#",
+      description: "Unix timestamps to human dates.",
+      href: "/tools/epoch",
       icon: "🕒",
+    },
+    {
+      name: "Cron Generator",
+      description: "Generate and explain cron expressions.",
+      href: "/tools/cron",
+      icon: "⏰",
     },
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-black">
       <div className="text-center mb-16">
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
           DevToolbox
@@ -47,11 +53,6 @@ export default function Home() {
             <p className="mt-2 text-gray-500">
               {tool.description}
             </p>
-            {tool.href === "#" && (
-              <span className="inline-block mt-4 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-400 rounded">
-                Coming Soon
-              </span>
-            )}
           </Link>
         ))}
       </div>
