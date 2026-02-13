@@ -32,8 +32,13 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <footer className="border-t py-8 mt-auto text-gray-500">
-          <div className="max-w-7xl mx-auto px-4 text-center text-sm">
-            © {new Date().getFullYear()} DevToolbox. Built for speed and privacy.
+          <div className="max-w-7xl mx-auto px-4 text-center text-sm flex flex-col md:flex-row justify-center items-center gap-4">
+            <span>© {new Date().getFullYear()} DevToolbox. Built for speed and privacy.</span>
+            <div className="flex gap-4">
+              <Link href="/privacy" className="hover:text-black">Privacy Policy</Link>
+              <Link href="/about" className="hover:text-black">About</Link>
+              <Link href="/contact" className="hover:text-black">Contact</Link>
+            </div>
           </div>
         </footer>
       </body>
