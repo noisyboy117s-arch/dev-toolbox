@@ -1,23 +1,15 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { posts } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
   title: "DevBlog | Engineering Insights & Guides",
   description: "Tips, tutorials, and deep dives into software engineering, web development, and security.",
 };
 
-const posts = [
-  {
-    title: "How to Safely Handle Base64 in Production",
-    excerpt: "Learn the best practices for encoding and decoding binary data without compromising security or performance.",
-    date: "Feb 13, 2026",
-    slug: "safe-base64-production",
-  },
-];
-
 export default function BlogHome() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-20">
+    <div className="max-w-4xl mx-auto px-4 py-20 text-black">
       <h1 className="text-4xl font-bold mb-12">Engineering Blog</h1>
       
       <div className="space-y-12">
@@ -27,7 +19,7 @@ export default function BlogHome() {
               <time className="text-sm text-gray-500">{post.date}</time>
               <h2 className="text-2xl font-bold mt-2 group-hover:underline">{post.title}</h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                {post.excerpt}
+                {post.description}
               </p>
               <div className="mt-4 font-semibold text-black">Read article →</div>
             </Link>

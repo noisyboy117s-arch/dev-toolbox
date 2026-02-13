@@ -17,6 +17,15 @@ export default function Navbar() {
             <Link href="/tools/base64" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
               Base64
             </Link>
+            <Link href="/tools/json" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+              JSON
+            </Link>
+            <Link href="/tools/epoch" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+              Epoch
+            </Link>
+            <Link href="/tools/cron" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+              Cron
+            </Link>
             <Link href="/blog" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
               Blog
             </Link>
