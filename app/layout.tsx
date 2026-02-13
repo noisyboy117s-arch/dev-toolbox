@@ -18,12 +18,15 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <html lang="en">
       <body
@@ -33,7 +36,7 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="border-t py-8 mt-auto text-gray-500">
           <div className="max-w-7xl mx-auto px-4 text-center text-sm flex flex-col md:flex-row justify-center items-center gap-4">
-            <span>© {new Date().getFullYear()} DevToolbox. Built for speed and privacy.</span>
+            <span suppressHydrationWarning>© {currentYear} DevToolbox. Built for speed and privacy.</span>
             <div className="flex gap-4">
               <Link href="/privacy" className="hover:text-black">Privacy Policy</Link>
               <Link href="/about" className="hover:text-black">About</Link>
