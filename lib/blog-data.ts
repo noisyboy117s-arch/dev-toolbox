@@ -997,7 +997,6 @@ export const posts: Post[] = [
       <h2 class="text-2xl font-bold mt-8 mb-4">Conclusion</h2>
       <p>The event loop is a masterpiece of engineering that makes Node.js one of the most powerful and efficient platforms for modern web development. By deeply understanding its phases, respecting its single-threaded nature, and mastering the nuances of microtasks and macrotasks, you can build applications that are incredibly fast, scalable, and resilient. Don't be afraid of the complexity—once you grasp the fundamental principles of the event loop, you'll have a competitive edge as a Node.js developer and the confidence to tackle even the most demanding architectural challenges. Happy coding, and keep that loop spinning!</p>
     `,
-  }
   },
   {
     slug: 'gemini-3-deep-think-agentic-coding',
