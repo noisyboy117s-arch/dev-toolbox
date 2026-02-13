@@ -997,78 +997,7 @@ export const posts: Post[] = [
       <h2 class="text-2xl font-bold mt-8 mb-4">Conclusion</h2>
       <p>The event loop is a masterpiece of engineering that makes Node.js one of the most powerful and efficient platforms for modern web development. By deeply understanding its phases, respecting its single-threaded nature, and mastering the nuances of microtasks and macrotasks, you can build applications that are incredibly fast, scalable, and resilient. Don't be afraid of the complexity—once you grasp the fundamental principles of the event loop, you'll have a competitive edge as a Node.js developer and the confidence to tackle even the most demanding architectural challenges. Happy coding, and keep that loop spinning!</p>
     `,
-  },
-  {
-    slug: 'gemini-3-deep-think-agentic-coding',
-    title: 'Gemini 3 Deep Think: The New Standard for Agentic Software Engineering',
-    date: '2026-02-13',
-    description: 'A deep dive into Google\'s latest model, Gemini 3 Deep Think, and how it\'s redefining the boundaries of AI-driven development and complex reasoning.',
-    content: `
-      <p>The landscape of Artificial Intelligence has shifted dramatically in early 2026. We are moving beyond the era of "chatbots" that simply predict the next token, and into the era of "Agentic Reasoners"—models designed not just to talk, but to think, plan, and execute complex workflows. At the forefront of this revolution is Google's latest release: <strong>Gemini 3 Deep Think</strong>. This model isn't just an incremental update; it's a fundamental change in how AI processes information, particularly in the domain of software engineering. In this deep dive, we'll explore the architecture of Deep Think, its unprecedented capabilities in agentic coding, and why it represents a watershed moment for developers worldwide.</p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">What is "Deep Think"? The Chain-of-Thought Revolution</h2>
-      <p>For years, Large Language Models (LLMs) have struggled with "System 2" thinking—the slow, deliberate, and logical reasoning required for complex problem-solving. While they could often guess the right answer for simple tasks, they frequently hallucinated or missed subtle edge cases when faced with multi-step logic. Gemini 3 Deep Think solves this by integrating a native <strong>Chain-of-Thought (CoT)</strong> reasoning process directly into the inference cycle. When presented with a complex prompt, the model doesn't just output an answer; it internalizes a private "scratchpad" where it breaks down the problem, explores multiple solution paths, identifies potential pitfalls, and iterates on its logic before ever presenting its final response to the user.</p>
-      <p>This internal reasoning isn't just a gimmick; it's a verifiable leap in accuracy. By allowing the model to "think" for seconds (or even minutes) before responding, Google has unlocked a level of precision that was previously impossible. In software development, this means the model can now reason about entire codebases, trace data flow across multiple files, and understand the downstream effects of a single change with the same depth as a senior engineer.</p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">Agentic Coding: From Autocomplete to Autonomous</h2>
-      <p>The true power of Gemini 3 Deep Think is realized when it's used as the brain of an autonomous agent. Traditional AI coding assistants are largely reactive—they wait for you to write code and suggest completions. An agentic assistant powered by Deep Think, however, is <strong>proactive</strong>. Because the model can plan and reason about complex tasks, it can take a high-level instruction like "refactor this legacy authentication module to use OAuth2 and update all relevant tests" and execute it from start to finish.
-      <ul class="list-disc ml-8 mb-4">
-        <li><strong>Multi-Step Planning:</strong> Deep Think excels at creating comprehensive execution plans. It identifies which files need to be modified, which dependencies need to be added, and which tests need to be run, all before making a single edit.</li>
-        <li><strong>Self-Correction:</strong> If the model makes a mistake or encounters a compiler error, its internal reasoning allows it to diagnose the issue and try a different approach without human intervention. It "debugs itself" in a way that feels eerily human.</li>
-        <li><strong>Context Awareness:</strong> With a massive context window paired with deep reasoning, the model doesn't just look at the current file; it understands the architectural patterns of the entire project, ensuring that its changes are consistent with the existing style and constraints.</li>
-      </ul></p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">Comparative Analysis: Gemini 3 vs. The Competition</h2>
-      <p>In the high-stakes world of LLMs, competition is fierce. How does Gemini 3 Deep Think stack up against its primary rivals, GPT-5.3 Codex Spark and Claude 4.5 Sonnet? While all three are incredible models, Gemini 3's integration with the Google ecosystem and its unique "Deep Think" inference mode give it a distinct edge in several key areas:
-      <table class="min-w-full bg-white border border-gray-200 mt-4 mb-8">
-        <thead>
-          <tr class="bg-gray-100">
-            <th class="py-2 px-4 border-b text-left">Feature</th>
-            <th class="py-2 px-4 border-b text-left">Gemini 3 Deep Think</th>
-            <th class="py-2 px-4 border-b text-left">GPT-5.3 Codex Spark</th>
-            <th class="py-2 px-4 border-b text-left">Claude 4.5 Sonnet</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="py-2 px-4 border-b font-semibold">Reasoning Mode</td>
-            <td class="py-2 px-4 border-b">Native Chain-of-Thought</td>
-            <td class="py-2 px-4 border-b">Instruction-Tuned Search</td>
-            <td class="py-2 px-4 border-b">Agentic Refusal Guard</td>
-          </tr>
-          <tr>
-            <td class="py-2 px-4 border-b font-semibold">Codebase Context</td>
-            <td class="py-2 px-4 border-b">2M+ Tokens</td>
-            <td class="py-2 px-4 border-b">1M Tokens</td>
-            <td class="py-2 px-4 border-b">500k Tokens</td>
-          </tr>
-          <tr>
-            <td class="py-2 px-4 border-b font-semibold">Best Use Case</td>
-            <td class="py-2 px-4 border-b">Autonomous Agents</td>
-            <td class="py-2 px-4 border-b">Rapid Prototyping</td>
-            <td class="py-2 px-4 border-b">Content Generation</td>
-          </tr>
-        </tbody>
-      </table>
-      While GPT-5.3 remains the king of raw speed and Spark is exceptional for quick snippets, Gemini 3's ability to "sit and think" through a problem makes it the superior choice for high-stakes, complex engineering tasks where accuracy is more important than immediate output.</p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">The Impact on the Developer Workflow</h2>
-      <p>The introduction of Gemini 3 Deep Think marks the beginning of the "Pair Programming 2.0" era. Developers are no longer the primary executors of code; they are becoming <strong>architects and reviewers</strong>. Instead of spending hours tracking down a bug or boilerplate, engineers can delegate these tasks to an agent and spend their time on higher-level system design and creative problem-solving. This shift doesn't replace the need for deep technical knowledge; rather, it amplifies it. To effectively lead an AI agent, you must understand the fundamentals of software engineering better than ever to ensure the agent is moving in the right direction.</p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">Building with Deep Think: Best Practices</h2>
-      <p>If you're looking to integrate Gemini 3 Deep Think into your workflow, consider these strategies to get the most out of its reasoning capabilities:
-      <ul class="list-disc ml-8 mb-4">
-        <li><strong>Embrace Verbosity:</strong> Unlike older models where short prompts were better, Deep Think thrives on detail. Provide context, explain your constraints, and be explicit about your desired outcome.</li>
-        <li><strong>Use it for "Hard" Problems:</strong> Don't waste the model's reasoning power (and your compute budget) on simple tasks. Save Deep Think for architecture reviews, complex refactors, and performance optimizations.</li>
-        <li><strong>Review the Reasoning:</strong> If the platform allows, always look at the model's chain-of-thought. It provides invaluable insight into *how* the model reached its conclusion and can help you spot logical errors before they reach your codebase.</li>
-      </ul></p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">Ethical Considerations and Security</h2>
-      <p>As AI agents become more autonomous, security becomes paramount. A model that can refactor an entire codebase can also introduce subtle vulnerabilities if not properly monitored. At OpenClaw, we are pioneering the use of "Security-First Agentic Loops," where every change suggested by a model like Gemini 3 is automatically scanned for common security pitfalls (like those discussed in our JWT and Base64 guides) before being presented for human review. The goal is to maximize the speed of AI while maintaining—and even improving—the security posture of our applications.</p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">Conclusion: The Future is Thoughtful</h2>
-      <p>Gemini 3 Deep Think is more than just another model; it's a glimpse into the future of human-computer collaboration. By bridging the gap between fast pattern matching and slow, logical reasoning, Google has provided us with a tool that can truly partner with us on the most challenging frontiers of technology. As we continue to build and grow as engineers, tools like Deep Think will be our closest allies, helping us conquer the impossible and build a more robust, efficient, and innovative digital world. The age of the thinking machine has arrived, and it's time for us to start thinking bigger.</p>
-    `,
+  }
   },
   {
     slug: 'gemini-3-deep-think-agentic-coding',
