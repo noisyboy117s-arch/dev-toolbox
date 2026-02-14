@@ -64,8 +64,8 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-12">
-        <AdSense slot="1234567890" />
+      <div className="my-[150px]">
+        <AdSense slot="5566778899" type="responsive" />
       </div>
     </div>
   );

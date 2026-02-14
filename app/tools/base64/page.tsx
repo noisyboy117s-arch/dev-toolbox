@@ -1,5 +1,6 @@
 import Base64Tool from "@/app/base64-tool";
 import { Metadata } from "next";
+import AdSense from "@/components/AdSense";
 
 export const metadata: Metadata = {
   title: "Modern Base64 Decoder/Encoder | DevToolbox",
@@ -12,6 +13,10 @@ export default function Base64Page() {
     <div className="py-12">
       <Base64Tool />
       
+      <div className="my-[150px]">
+        <AdSense slot="1122334455" type="responsive" />
+      </div>
+
       <section className="max-w-4xl mx-auto px-8 mt-16 prose prose-slate">
         <h2 className="text-2xl font-bold mb-4">What is Base64?</h2>
         <p className="text-gray-700 mb-4">
@@ -21,7 +26,7 @@ export default function Base64Page() {
         <ul className="list-disc pl-5 space-y-2 text-gray-700">
           <li><strong>Privacy First:</strong> Your data is processed locally in your browser. We never see your strings.</li>
           <li><strong>Fast:</strong> Instant conversion as you type or click.</li>
-          <li><strong>Ad-Free:</strong> Clean, minimalist interface designed for productivity.</li>
+          <li><strong>Productivity:</strong> Clean, minimalist interface designed for productivity.</li>
         </ul>
       </section>
     </div>

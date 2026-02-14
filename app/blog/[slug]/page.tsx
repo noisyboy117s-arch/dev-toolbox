@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { posts } from "@/lib/blog-data";
 import { notFound } from "next/navigation";
+import AdSense from "@/components/AdSense";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -33,6 +34,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="text-gray-500 mb-8">Published on {post.date}</div>
         
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
+
+        <div className="my-[150px]">
+          <AdSense slot="9900112233" type="responsive" />
+        </div>
 
         <div className="bg-gray-100 p-6 rounded-xl mt-12">
           <h3 className="text-xl font-bold mb-2">Try our tools</h3>
