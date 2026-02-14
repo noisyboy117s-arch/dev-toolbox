@@ -8,6 +8,61 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: 'the-llm-code-purge-stoat-incident',
+    title: 'The Great LLM Code Purge: Why Stoat Removed All AI-Generated Code',
+    date: '2026-02-14',
+    description: 'A deep dive into the Stoat incident, the AI productivity paradox, and the future of human authorship in software engineering.',
+    content: `
+      <p>In the quiet corners of the open-source world, a storm has been brewing. It’s a storm that challenges the very foundation of how we build software in the 2020s. For the last three years, the narrative has been clear: Large Language Models (LLMs) are the ultimate force multipliers. We were told that AI would handle the "boring" parts of coding—the boilerplate, the unit tests, the simple CRUD operations—freeing human engineers to solve the "real" problems.</p>
+
+      <p>But last week, the developers behind <strong>Stoat</strong>, an emerging privacy-focused chat application, did something that sent shockwaves through the community. After a heated public discussion and intense user criticism, they decided to <strong>purge every single line of AI-generated code from their repository.</strong></p>
+
+      <p>This wasn't just a technical decision; it was a philosophical declaration. It marks the beginning of the "AI Hangover"—a period where we must reconcile our hunger for speed with our need for trust, understanding, and accountability.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Stoat Incident: What Actually Happened?</h2>
+      <p>The controversy began when users noticed patterns in the Stoat codebase that suggested heavy reliance on generative AI. While the developers initially defended the practice, arguing that a small team needs the efficiency of "hundreds of entry-level coders" to handle tedious tasks, the community wasn’t buying it.</p>
+
+      <p>The pushback was swift. Users argued that for a project promising privacy and security, "black box" code—code that the author might not fully understand or haven't personally vetted character-by-character—was a non-starter. The discussion culminated in a GitHub thread where critics pointed out that the "tedious" code AI handles is often where subtle bugs and security vulnerabilities hide.</p>
+
+      <p>The Stoat team eventually conceded, announcing a total removal of LLM-generated snippets. But the incident raises a much larger question: Is the industry-wide rush toward "AI-first" development actually making us better engineers, or just faster at making mistakes?</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Allure of the "AI Intern"</h2>
+      <p>It’s easy to see why the Stoat team—and thousands of others—leaned into LLMs. In the modern tech landscape, speed is the only currency. Small teams feel pressured to ship features at a "Big Tech" pace. AI promises to be the "infinite intern": it doesn't sleep, it doesn't complain about writing boilerplate, and it knows a dozen frameworks you haven't even heard of yet.</p>
+
+      <p>When you’re staring at a deadline, the temptation to let GitHub Copilot or ChatGPT-5 handle the mundane setup of a new module is nearly irresistible. "It’s just boilerplate," we tell ourselves. "I’ll review it later."</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Community Backlash: Why "Human-Written" Still Matters</h2>
+      <p>In the world of open source, code is more than just instructions for a CPU; it’s a social contract. When you contribute to or use a project, there is an implicit assumption that a human has thought through the logic, weighed the trade-offs, and taken responsibility for the outcome.</p>
+
+      <p>The Stoat critics hit on a vital nerve: <strong>Trust is not scaleable through an API.</strong> If a developer uses AI to generate 80% of their codebase, are they really the author of that software? Or are they just an editor? In security-sensitive projects, this distinction is critical. A machine can generate code that *looks* correct but fails in catastrophic ways when faced with edge cases it hasn't seen in its training data.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Productivity Paradox: Does AI Really Make Us Faster?</h2>
+      <p>One of the most compelling arguments against the AI-first approach is what researchers are calling the <strong>AI Productivity Paradox</strong>. A recent study suggests that while AI makes developers <em>feel</em> faster, the actual time spent on a project can increase. Why? Because the cost of <strong>reviewing</strong> code is often higher than the cost of <strong>writing</strong> it.</p>
+
+      <p>When you write code yourself, you build a mental model of the system. You understand why Variable A is passed to Function B. When an AI generates that same code, you have to work backward to reconstruct that mental model. If the AI makes a subtle logic error, it might take hours of debugging to find—hours that could have been saved if the human had just written the logic from scratch.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Security and Trust: The Hidden Risks of Unvetted Machine Code</h2>
+      <p>Beyond productivity lies the shadow of security. AI models are trained on vast repositories of existing code, including code with known vulnerabilities, outdated practices, and insecure patterns. When an LLM generates a block of code, it’s not "thinking" about security; it’s predicting the most likely sequence of tokens.</p>
+
+      <p>This can lead to "hallucinated" vulnerabilities—coding patterns that look standard but introduce subtle memory leaks, injection points, or logical bypasses. For a project like Stoat, which markets itself on privacy, the risk of an AI-generated bug leaking user data was simply too high. The community demanded human accountability, and in the end, that demand won out over the desire for development speed.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The New Middle Ground: Finding a Balance</h2>
+      <p>Does the Stoat incident mean we should stop using AI altogether? Of course not. LLMs are incredible tools for learning, brainstorming, and finding documentation. But the "Stoat Purge" suggests we need a new set of ethical and professional standards for AI in engineering.</p>
+
+      <ul class="list-disc ml-8 mb-4">
+        <li><strong>Authorship over Assembly:</strong> Use AI to explain concepts, not to write entire files. If you can’t explain every line of a PR to a teammate, you shouldn't be shipping it.</li>
+        <li><strong>The "Boilerplate" Trap:</strong> If a task is so tedious that you need an AI to write it, maybe your architecture is the problem. Use better abstractions, libraries, and frameworks instead of "throwing AI" at bad code.</li>
+        <li><strong>Transparency is Mandatory:</strong> If you use AI-assisted tools, be open about it. Let your users and your community know where the machine ends and the human begins.</li>
+        <li><strong>Security-First Review:</strong> Treat AI-generated code with the same level of suspicion you would treat code from an anonymous stranger on the internet.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Conclusion: Toward Authentic Engineering</h2>
+      <p>The Stoat incident is a wake-up call. It reminds us that software engineering is a craft, not just a production line. While the siren song of "infinite scale" through AI is loud, the value of a human engineer lies in their ability to understand, to judge, and to care about the code they produce.</p>
+
+      <p>As we move forward into 2026, the teams that win won't be the ones who use AI to write the most code. They’ll be the ones who use AI to become better thinkers, while keeping their hands firmly on the keyboard for the things that matter. Software development is about solving human problems. And as Stoat learned the hard way, you can’t outsource human trust to a machine.</p>
+    `,
+  },
+  {
     slug: 'safely-handle-base64',
     title: 'How to Safely Handle Base64 in Production',
     date: '2026-02-13',
