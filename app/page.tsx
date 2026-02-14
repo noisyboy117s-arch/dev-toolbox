@@ -35,7 +35,7 @@ export default function Home() {
           DevToolbox
         </h1>
         <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-          Essential utilities for developers. Fast, private, and 100% ad-free.
+          Essential utilities for developers. Fast, private, and developer-focused.
         </p>
       </div>
 
@@ -60,9 +60,15 @@ export default function Home() {
       <div className="mt-20 bg-black rounded-3xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Why DevToolbox?</h2>
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          We got tired of using 10-year-old websites cluttered with tracking pixels and flashing banners just to decode a string. DevToolbox is built for the modern engineer.
+          We got tired of using 10-year-old websites cluttered with tracking pixels just to decode a string. DevToolbox is built for the modern engineer.
         </p>
+      </div>
+
+      <div className="mt-12">
+        <AdSense slot="1234567890" />
       </div>
     </div>
   );
 }
+
+import AdSense from "@/components/AdSense";
