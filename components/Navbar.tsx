@@ -1,40 +1,45 @@
+"use client";
 import Link from 'next/link';
+import { useTheme } from '@/contexts/ThemeContext';
+import ThemeToggle from './ThemeToggle';
+import ToolDropdown from './ToolDropdown';
 
 export default function Navbar() {
+  const { theme } = useTheme();
+
   return (
-    <nav className="border-b bg-white">
+    <nav className="border-b bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold text-black">
+            <Link href="/" className="text-2xl font-bold text-black dark:text-gray-100">
               DevToolbox
             </Link>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <Link href="/" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+          
+          <div className="hidden sm:flex sm:items-center sm:gap-4">
+            <Link href="/" className="text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-sm font-medium transition-colors">
               Home
             </Link>
-            <Link href="/tools/base64" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
-              Base64
-            </Link>
-            <Link href="/tools/json" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
-              JSON
-            </Link>
-            <Link href="/tools/epoch" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
-              Epoch
-            </Link>
-            <Link href="/tools/cron" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
-              Cron
-            </Link>
-            <Link href="/blog" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+            <ToolDropdown />
+            <Link href="/blog" className="text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-sm font-medium transition-colors">
               Blog
             </Link>
-            <Link href="/about" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+            <Link href="/about" className="text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-sm font-medium transition-colors">
               About
             </Link>
-            <Link href="/contact" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-black text-sm font-medium">
+            <Link href="/contact" className="text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-sm font-medium transition-colors">
               Contact
             </Link>
+            <div className="ml-4">
+              <ThemeToggle />
+            </div>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="sm:hidden flex items-center gap-2">
+            <ToolDropdown />
+            <ThemeToggle />
           </div>
         </div>
       </div>

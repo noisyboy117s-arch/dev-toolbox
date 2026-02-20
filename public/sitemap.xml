@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://devtoolbox.com</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com" />
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/base64-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/base64-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/base64-tool.png</image:loc>
+      <image:title>/Base64 Tool Tool</image:title>
+      <image:caption>/Base64 Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/json-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/json-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/json-tool.png</image:loc>
+      <image:title>/Json Tool Tool</image:title>
+      <image:caption>/Json Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/epoch-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/epoch-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/epoch-tool.png</image:loc>
+      <image:title>/Epoch Tool Tool</image:title>
+      <image:caption>/Epoch Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/cron-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/cron-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/cron-tool.png</image:loc>
+      <image:title>/Cron Tool Tool</image:title>
+      <image:caption>/Cron Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/url-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/url-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/url-tool.png</image:loc>
+      <image:title>/Url Tool Tool</image:title>
+      <image:caption>/Url Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/jwt-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/jwt-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/jwt-tool.png</image:loc>
+      <image:title>/Jwt Tool Tool</image:title>
+      <image:caption>/Jwt Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/hash-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/hash-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/hash-tool.png</image:loc>
+      <image:title>/Hash Tool Tool</image:title>
+      <image:caption>/Hash Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/uuid-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/uuid-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/uuid-tool.png</image:loc>
+      <image:title>/Uuid Tool Tool</image:title>
+      <image:caption>/Uuid Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/regex-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/regex-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/regex-tool.png</image:loc>
+      <image:title>/Regex Tool Tool</image:title>
+      <image:caption>/Regex Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/color-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/color-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/color-tool.png</image:loc>
+      <image:title>/Color Tool Tool</image:title>
+      <image:caption>/Color Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/query-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/query-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/query-tool.png</image:loc>
+      <image:title>/Query Tool Tool</image:title>
+      <image:caption>/Query Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/password-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/password-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/password-tool.png</image:loc>
+      <image:title>/Password Tool Tool</image:title>
+      <image:caption>/Password Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/sql-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/sql-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/sql-tool.png</image:loc>
+      <image:title>/Sql Tool Tool</image:title>
+      <image:caption>/Sql Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/postgres-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/postgres-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/postgres-tool.png</image:loc>
+      <image:title>/Postgres Tool Tool</image:title>
+      <image:caption>/Postgres Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/markdown-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/markdown-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/markdown-tool.png</image:loc>
+      <image:title>/Markdown Tool Tool</image:title>
+      <image:caption>/Markdown Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/diff-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/diff-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/diff-tool.png</image:loc>
+      <image:title>/Diff Tool Tool</image:title>
+      <image:caption>/Diff Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/svg-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/svg-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/svg-tool.png</image:loc>
+      <image:title>/Svg Tool Tool</image:title>
+      <image:caption>/Svg Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/image-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/image-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/image-tool.png</image:loc>
+      <image:title>/Image Tool Tool</image:title>
+      <image:caption>/Image Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/lorem-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/lorem-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/lorem-tool.png</image:loc>
+      <image:title>/Lorem Tool Tool</image:title>
+      <image:caption>/Lorem Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/qr-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/qr-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/qr-tool.png</image:loc>
+      <image:title>/Qr Tool Tool</image:title>
+      <image:caption>/Qr Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://devtoolbox.com/contrast-tool</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devtoolbox.com/contrast-tool" />
+    <image:image>
+      <image:loc>https://devtoolbox.com/screenshots/contrast-tool.png</image:loc>
+      <image:title>/Contrast Tool Tool</image:title>
+      <image:caption>/Contrast Tool developer tool screenshot</image:caption>
+    </image:image>
+  </url>
+</urlset>

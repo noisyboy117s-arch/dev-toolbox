@@ -5,6 +5,7 @@ export default function Base64Tool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [mode, setMode] = useState<'encode' | 'decode'>('decode');
+  const [copySuccess, setCopySuccess] = useState(false);
 
   const handleProcess = () => {
     try {
@@ -16,6 +17,22 @@ export default function Base64Tool() {
     } catch (e) {
       setOutput('Error: Invalid input for processing.');
     }
+  };
+
+  const copyToClipboard = async (text: string, event?: React.MouseEvent<HTMLButtonElement>) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const clearAll = () => {
+    setInput('');
+    setOutput('');
+    setCopySuccess(false);
   };
 
   return (
@@ -54,7 +71,24 @@ export default function Base64Tool() {
 
       {output && (
         <div className="mt-8">
-          <h2 className="text-xl font-semibold mb-2">Result:</h2>
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-xl font-semibold">Result:</h2>
+            <button
+              onClick={() => copyToClipboard(output)}
+              onMouseDown={(e) => copyToClipboard(output, e)}
+              className={`px-3 py-1 bg-black text-white text-sm rounded hover:bg-gray-800 transition-colors ${
+                copySuccess ? 'bg-green-600 hover:bg-green-700' : ''
+              }`}
+            >
+              {copySuccess ? 'Copied!' : 'Copy'}
+            </button>
+            <button
+              onClick={clearAll}
+              className="px-3 py-1 border border border-gray-300 text-gray-600 text-sm rounded hover:bg-gray-50 transition-colors"
+            >
+              Clear
+            </button>
+          </div>
           <pre className="p-4 bg-gray-100 rounded break-all whitespace-pre-wrap font-mono">
             {output}
           </pre>
