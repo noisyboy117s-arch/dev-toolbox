@@ -851,4 +851,86 @@ export const posts: Post[] = [
       <p>The OpenAI preprint is a glimpse into a future where human domain experts and AI reasoning agents work hand-in-hand. The human authors provided the context and the verification, while the AI provided the pattern recognition and the computational endurance. As Nima Arkani-Hamed, one of the world's leading physicists, noted, we are entering an era of "simple formula pattern recognition" that will move us toward uncovering deep new structures in every field—from the subatomic to the algorithmic. In 2026, the most powerful tool in a developer's belt isn't a new framework; it's the ability to collaborate with a mind that can think for 12 hours straight without losing focus.</p>
     `,
   },
+  {
+    slug: 'ladybird-browser-adopts-rust-ai-translation',
+    title: 'Ladybird Browser Adopts Rust — And Used AI to Port 25,000 Lines in Two Weeks',
+    date: '2026-02-23',
+    description: 'Andreas Kling announces Ladybird is rewriting parts of its engine in Rust, using Claude Code and Codex for AI-assisted C++ to Rust translation with zero regressions.',
+    content: `
+      <p>In a move that sent shockwaves through the developer community this week, <strong>Andreas Kling</strong> — the founder of the Ladybird browser project — announced that Ladybird is officially <a href="https://ladybird.org/posts/adopting-rust/">adopting Rust</a> as its memory-safe replacement for C++. But the real headline isn't just <em>what</em> they're doing. It's <em>how</em> they did the first port: 25,000 lines of C++ to Rust in two weeks, with zero regressions, using AI coding agents.</p>
+
+      <p>This is one of the most significant developments in systems programming and browser engineering in recent memory, and it carries massive implications for every team maintaining a large C++ codebase. Let's break down what happened, why it matters, and what you should take away from it.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Background: Why Not Swift?</h2>
+      <p>Ladybird had previously explored <strong>Swift</strong> as their memory-safe language of choice. On paper, it made sense — Swift has modern memory safety features and a clean syntax. But in practice, the C++ interop story never matured enough, and platform support outside the Apple ecosystem remained limited. After what Kling describes as "another year of treading water," the team made the pragmatic call: <strong>Rust is the answer.</strong></p>
+
+      <p>This mirrors a broader industry pattern. Both <strong>Firefox</strong> (via the Servo project and Stylo) and <strong>Chromium</strong> have been incrementally introducing Rust into their codebases. Ubuntu/Canonical recently announced Rust as a core supported language. The momentum is undeniable. Rust has crossed the chasm from "interesting experiment" to "industry standard for systems code."</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Port: AI-Assisted, Human-Directed</h2>
+      <p>Here's where it gets truly fascinating. Kling used <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> to translate LibJS — Ladybird's JavaScript engine — from C++ to Rust. But he's very deliberate about framing this correctly:</p>
+
+      <blockquote class="border-l-4 border-blue-500 pl-4 italic my-6">"This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was hundreds of small prompts, steering the agents where things needed to go."</blockquote>
+
+      <p>This is the <strong>correct</strong> way to use AI for serious systems work. Not "vibe coding" where you let the model generate sprawling code and hope for the best. Instead, Kling treated AI as a <em>translation accelerator</em> — a tool that handles the mechanical, repetitive aspects of converting syntax and patterns while the human architect maintains full control over design decisions.</p>
+
+      <p>After the initial translation, he ran <strong>multiple passes of adversarial review</strong>, asking different models to analyze the code for mistakes and bad patterns. This multi-model review approach is a technique more teams should adopt.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Results: Zero Regressions, Zero Performance Loss</h2>
+      <p>The numbers speak for themselves:</p>
+      <ul class="list-disc pl-6 space-y-2 my-4">
+        <li><strong>25,000 lines</strong> of Rust produced</li>
+        <li><strong>52,898 test262 tests</strong> — 0 regressions</li>
+        <li><strong>12,461 Ladybird regression tests</strong> — 0 regressions</li>
+        <li><strong>No performance regressions</strong> on any tracked JS benchmarks</li>
+        <li>Byte-for-byte identical AST and bytecode output between C++ and Rust pipelines</li>
+        <li>Completed in <strong>~2 weeks</strong> (estimated months by hand)</li>
+      </ul>
+
+      <p>This is a remarkable result. The bar wasn't "it mostly works." The bar was <em>byte-for-byte identical output</em>. Every AST node, every bytecode instruction, verified in lockstep mode where both pipelines run simultaneously on real-world web traffic.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Why This Matters for Your Team</h2>
+      <p>If you're a tech lead or engineering manager maintaining a large C/C++ codebase, this announcement should be a wake-up call — but not for the reason you might think.</p>
+
+      <p><strong>The lesson isn't "rewrite everything in Rust."</strong> Kling himself is clear that this isn't becoming the main focus of the project. C++ development continues, and Rust porting is a deliberate, managed side-track.</p>
+
+      <p>The real lessons are:</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">1. AI-Assisted Translation Is Production-Ready</h3>
+      <p>We've moved past the era where AI code translation is a toy demo. When a major open-source project uses AI to port 25,000 lines of a JavaScript engine with zero regressions, that's a signal. If you have well-tested C++ code with strong test coverage, AI-assisted Rust translation is now a viable migration strategy.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">2. Test Coverage Is Your Migration Enabler</h3>
+      <p>The reason this worked is that LibJS has <em>extensive</em> test coverage through test262 and internal regression tests. Without that safety net, the "zero regressions" claim would be impossible to make. If you're planning any major language migration, <strong>invest in tests first</strong>. They're not just quality assurance — they're your migration enabler.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">3. "Translated From C++" Is Fine (For Now)</h3>
+      <p>Kling openly acknowledges the Rust code has a "translated from C++" vibe. It mimics C++ register allocation patterns. It's not idiomatic Rust. And <em>that's okay</em>. The priority was correctness and compatibility, not elegance. Idiomatic cleanup comes later, once the C++ pipeline is retired. This is a masterclass in <strong>pragmatic engineering</strong> — don't let perfect be the enemy of shipped.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The Broader Rust Momentum</h2>
+      <p>This announcement doesn't exist in a vacuum. In the same week:</p>
+      <ul class="list-disc pl-6 space-y-2 my-4">
+        <li><strong>Ubuntu/Canonical</strong> announced Rust as a core supported development language at Rust Nation, with their VP of Engineering laying out a visionary-yet-practical adoption roadmap</li>
+        <li>The Linux kernel continues expanding its Rust support</li>
+        <li>Amazon Web Services has been steadily increasing Rust adoption across critical infrastructure</li>
+      </ul>
+
+      <p>We're watching the "crossing the chasm" moment for Rust in real-time. It's no longer just for "those fancy pants developers at S3" (as one commentator put it). It's becoming the pragmatic default for any new systems code where memory safety matters — which is to say, all systems code.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">The AI Angle: A New Playbook for Large-Scale Migrations</h2>
+      <p>Perhaps the most under-discussed aspect of this story is what it means for <strong>AI-assisted software migration</strong> as a practice. Kling's approach — hundreds of small, directed prompts, multi-model adversarial review, lockstep verification — is essentially a playbook that any team can follow:</p>
+
+      <ol class="list-decimal pl-6 space-y-2 my-4">
+        <li><strong>Choose a well-bounded, well-tested subsystem</strong></li>
+        <li><strong>Use AI for the mechanical translation</strong>, not the architectural decisions</li>
+        <li><strong>Run adversarial review with multiple models</strong></li>
+        <li><strong>Verify with existing test suites</strong> — demand identical behavior</li>
+        <li><strong>Accept non-idiomatic output</strong> and plan cleanup as a separate phase</li>
+      </ol>
+
+      <p>This is the mature, responsible way to leverage AI for engineering. It's the antithesis of "vibe coding." It doesn't replace engineering judgment — it <em>amplifies</em> it.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">What to Watch Next</h2>
+      <p>Ladybird's Rust adoption is explicitly a long-term, managed effort. The core team controls what gets ported and when. But the precedent has been set: a major systems project has demonstrated that AI-accelerated C++ to Rust migration <em>works at scale</em>, with rigorous verification.</p>
+
+      <p>For the rest of us, the question isn't whether Rust is the future of systems programming — that debate is effectively over. The question is whether your codebase has the test coverage to make the same leap when the time comes. Start investing in that now. Your future self will thank you.</p>
+    `,
+  },
 ];
